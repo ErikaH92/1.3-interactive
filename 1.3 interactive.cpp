@@ -2,15 +2,15 @@
 //
 
 #include <iostream>
-
+//including namespace std is to ignore from overusage on the program and just inlcude cout cin
 using namespace std;
-
+//the function of main and inside includes the code.
 int main()
 {
 
-
-    cout << "How many cookies would you like to make?\n";
-
+    //displays to user how many cookies would you like to make 
+    cout << " How many cookies would you like to make? \n ";
+    //identified my variables to be double to display the answer in decimal format for sugar, flour and butter. number of cookies is integer.
     double number_of_sugar = (0, 0);
 
     double number_of_flour = (0, 0);
@@ -21,10 +21,10 @@ int main()
 
 
 
-
+    //The number user enters will be stored 
     cin >> number_of_cookies;
-
-    cout << "You entered " << number_of_cookies << " cookies \n ";
+    //it will display to the user " to make 78 (for example) cookies, you will need number of sugar , flour , butter.
+    cout << " To make " << number_of_cookies << " cookies.  \n ";
 
     // using the formula to isolate number_of_sugar 
     // 1/48= nunber of (sugar , flour, butter ) / number of cups 
@@ -37,12 +37,14 @@ int main()
 
     number_of_butter = number_of_cookies * (1);
 
+    //the display is you will need number of cups of sugar , number of cups of flour, number of cups of butter. 
+    cout << "You will need: \n ";
+    
+    cout << number_of_sugar << " cups of sugar. \n ";
 
-    cout << " You will need " << number_of_sugar << "cups of sugar \n";
+    cout << number_of_flour << " cups of flour. \n ";
 
-    cout << "You will need " << number_of_flour << " cups of flour \n";
-
-    cout << " You will need" << number_of_butter << "cups of butter\n";
+    cout << number_of_butter << " cups of butter. \n ";
 
 
 
